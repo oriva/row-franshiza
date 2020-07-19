@@ -1,5 +1,20 @@
 body {
   font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
 
 a {
@@ -8,6 +23,7 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 li {

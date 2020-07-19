@@ -1,0 +1,21 @@
+.office-msk {
+  background-image: url('../img/created-dig-bg.jpg');
+  background-size:  cover;
+  padding:          72px 120px;
+  &__title {
+    font-size:   36px;
+    font-weight: 900;
+  }
+  &__desc {
+    font-size: 18px;
+  }
+  span {
+    display: block;
+  }
+  button {
+    margin-top: 28px;
+    padding:          23px 32px;
+    background-color: #000;
+    color:            #fff;
+  }
+}

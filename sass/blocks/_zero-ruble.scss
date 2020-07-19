@@ -1,0 +1,39 @@
+.zero-ruble {
+  display: flex;
+  flex-wrap: wrap;
+  background-image:    url('../img/zero-ruble-bg.jpg');
+  background-repeat:   no-repeat;
+  background-position: right top;
+  background-size:     contain;
+  padding-top:         10px;
+  margin-top:          160px;
+  margin-bottom: 160px;
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 142px;
+    font-weight: 900;
+    color: #FFF;
+    flex: 0 0 194px;
+    width:  194px;
+    height: 194px;
+    background: url("../img/created-dig-bg.jpg");
+  }
+  &__heading {
+    flex: 1 0 0;
+    width: 100%;
+    font-size: 66px;
+    font-weight: 900;
+    padding-left: 30px;
+    line-height: 0.92;
+  }
+  &__under-head {
+    padding-top: 36px;
+    margin-left: 227px;
+    width: 500px;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+}

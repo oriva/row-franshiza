@@ -1,0 +1,48 @@
+.work-with-us {
+  margin-top:    140px;
+  margin-bottom: 120px;
+  h2 {
+    font-size:               100px;
+    font-weight:             900;
+  }
+  p {
+    font-size:   34px;
+    font-weight: 900;
+  }
+}
+
+.work-with-after {
+  background-image: url('../img/air.jpg');
+  background-repeat: no-repeat;
+  background-size:   auto 600px;
+  background-position: right center;
+  &__li {
+    display:       flex;
+    flex-wrap:     wrap;
+    margin-bottom: 63px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > div:first-child {
+      font-size:   22px;
+      font-weight: 900;
+      width:       73px;
+      flex:        0 0 73px;
+    }
+    & > div:last-child {
+      width: calc(100% - 73px);
+      flex:  0 0 calc(100% - 73px);
+      & > *:first-child {
+        display: block;
+        font-size: 22px;
+        font-weight: 900;
+        padding-bottom: 18px;
+      }
+    }
+  }
+  &__last {
+    & > div {
+      padding-left: 40px;
+    }
+  }
+}

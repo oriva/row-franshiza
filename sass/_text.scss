@@ -1,0 +1,36 @@
+.text-center {
+  text-align: center;
+}
+
+.heading-xlarge {
+  font-size: 58px;
+  font-weight: 900;
+}
+
+.heading-large {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.heading-middle {
+  font-size: 28px;
+  font-weight: 900;
+  &__reg {
+    font-weight: 400;
+  }
+}
+
+.heading-small {
+  font-size: 18px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-pink {
+  background:              url('../img/created-dig-bg.jpg');
+  background-size:         cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,105 @@
+.why-15 {
+  width:               1120px;
+  max-width:           100%;
+  margin-top:          80px;
+  margin-bottom:       140px;
+  padding:             90px 110px;
+  margin-left:         73px;
+  background-image:    url('../img/blue-grad.jpg');
+  background-size:     cover;
+  background-position: center bottom;
+  font-size:           36px;
+  font-weight:         900;
+  img {
+    margin-left: 36px;
+    width:       18px;
+  }
+}
+
+.partner {
+  background-image:    url('../img/line.svg');
+  background-size:     cover;
+  background-position: left center;
+  background-repeat:   no-repeat;
+  margin-top:          66px;
+}
+
+.partner-grey {
+  display:          flex;
+  flex-wrap:        wrap;
+  background-color: #fbfbfb;
+  padding:          55px 0;
+  &__soc-net {
+    position:      relative;
+    left:          -21px;
+    display:       block;
+    width:         42px;
+    flex:          0 0 42px;
+    padding-right: 10px;
+    a {
+      display:       block;
+      width:         43px;
+      height:        43px;
+      margin-bottom: 13px;
+    }
+    img {
+      display: block;
+      width:   100%;
+      height:  100%;
+    }
+  }
+  &__photo {
+    width:        282px;
+    flex:         0 0 282px;
+    padding-left: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  &__about {
+    flex:          1 0 0;
+    width:         100%;
+    padding-left:  20px;
+    padding-right: 20px;
+    h3 {
+      font-size:    40px;
+      padding-left: 54px;
+    }
+    p {
+      font-size:        14px;
+      background-color: #272727;
+      clip-path:        polygon(8% 5%, 100% 25%, 93% 87%, 0 100%);
+      padding:          53px;
+    }
+  }
+  &__quotes {
+    text-align: center;
+    display:    block;
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+.partner-button {
+  width:             262px;
+  flex:              0 0 262px;
+  padding:           60px 30px;
+  background-image:  url("../img/partner-bg.jpg");
+  background-size:   cover;
+  background-repeat: no-repeat;
+  &__plus {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    font-size:       95px;
+    font-weight:     900;
+    width:           120px;
+    height:          120px;
+    margin:          45px auto 120px;
+    border:          10px solid #FFF;
+    border-radius:   50%;
+    text-align:      center;
+    cursor:          pointer;
+  }
+}

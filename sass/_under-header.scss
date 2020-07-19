@@ -1,0 +1,190 @@
+.head {
+  height: 100vh;
+}
+
+.under-header {
+  height:      calc(100vh - 162px);
+  padding-top: 102px;
+  .container, .row {
+    height: 100%;
+  }
+  &__title {
+    display:     block;
+    font-size:   36px;
+    font-weight: 600;
+  }
+  &__button {
+    position:         relative;
+    color:            #FFF;
+    background-color: #000;
+    padding:          30px 40px;
+    margin-top:       94px;
+    font-size:        28px;
+    font-weight:      900;
+    span {
+      position: relative;
+      z-index:  2;
+    }
+    &::after {
+      content:           '';
+      position:          absolute;
+      z-index:           1;
+      height:            180px;
+      width:             170px;
+      top:               56px;
+      left:              50%;
+      background-image:  url('../img/books-button.png');
+      background-size:   contain;
+      background-repeat: no-repeat;
+      transform:         translate(-50%, -50%);
+    }
+  }
+}
+
+.circle-button {
+  position:        relative;
+  height:          275px;
+  width:           275px;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  &__text-block {
+    position:  absolute;
+    top:       0;
+    left:      0;
+    font-size: 24px;
+    width:     100%;
+    height:    100%;
+    transform: rotate(360deg);
+    animation: rotate 8s linear infinite;
+    span {
+      position: absolute;
+      left:     50%;
+      top:      0;
+      &:nth-of-type(n) {
+        bottom:                   50%; /* отступ от центра по радиусу */
+        -ms-transform-origin:     0% 100%;
+        -webkit-transform-origin: 0% 100%;
+        transform-origin:         0 100%;
+        padding-bottom:           50%; /* отступ от центра круга */
+      }
+      $deg: 11.4;
+      &:nth-child(1) {
+        transform: rotate(0deg)
+      }
+      &:nth-child(2) {
+        transform: rotate($deg*1deg)
+      }
+      &:nth-child(3) {
+        transform: rotate($deg*2deg)
+      }
+      &:nth-child(4) {
+        transform: rotate($deg*3deg)
+      }
+      &:nth-child(5) {
+        transform: rotate($deg*4deg)
+      }
+      &:nth-child(6) {
+        transform: rotate($deg*5deg)
+      }
+      &:nth-child(7) {
+        transform: rotate($deg*6deg)
+      }
+      &:nth-child(8) {
+        transform: rotate($deg*7deg)
+      }
+      &:nth-child(9) {
+        transform: rotate($deg*8deg)
+      }
+      &:nth-child(10) {
+        transform: rotate($deg*9deg)
+      }
+      &:nth-child(11) {
+        transform: rotate($deg*10deg)
+      }
+      &:nth-child(12) {
+        transform: rotate($deg*11deg)
+      }
+      &:nth-child(13) {
+        transform: rotate($deg*12deg)
+      }
+      &:nth-child(14) {
+        transform: rotate($deg*13deg)
+      }
+      &:nth-child(15) {
+        transform: rotate($deg*14deg)
+      }
+      &:nth-child(16) {
+        transform: rotate($deg*15deg)
+      }
+      &:nth-child(17) {
+        transform: rotate($deg*16deg)
+      }
+      &:nth-child(18) {
+        transform: rotate($deg*17deg)
+      }
+      &:nth-child(19) {
+        transform: rotate($deg*18deg)
+      }
+      &:nth-child(20) {
+        transform: rotate($deg*19deg)
+      }
+      &:nth-child(21) {
+        transform: rotate($deg*20deg)
+      }
+      &:nth-child(22) {
+        transform: rotate($deg*21deg)
+      }
+      &:nth-child(23) {
+        transform: rotate($deg*22deg)
+      }
+      &:nth-child(24) {
+        transform: rotate($deg*23deg)
+      }
+      &:nth-child(25) {
+        transform: rotate($deg*24deg)
+      }
+      &:nth-child(26) {
+        transform: rotate($deg*25deg)
+      }
+      &:nth-child(27) {
+        transform: rotate($deg*26deg)
+      }
+      &:nth-child(28) {
+        transform: rotate($deg*27deg)
+      }
+      &:nth-child(29) {
+        transform: rotate($deg*28deg)
+      }
+      &:nth-child(30) {
+        transform: rotate($deg*29deg)
+      }
+    }
+  }
+  button {
+    position:          relative;
+    top:               0;
+    left:              0;
+    font-size:         16px;
+    font-weight:       900;
+    color:             #fff;
+    height:            50%;
+    width:             50%;
+    border-radius:     50%;
+    background-image:  url('../img/button-bg.png');
+    background-repeat: no-repeat;
+    background-size:   cover;
+    cursor:            pointer;
+    transition:        .4s;
+    &:hover {
+      height: 65%;
+      width:  65%;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+}

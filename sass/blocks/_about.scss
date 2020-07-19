@@ -1,0 +1,18 @@
+.about {
+  padding-bottom: 120px;
+  &__sub-heading {
+    padding-top:    18px;
+    padding-bottom: 62px;
+  }
+  &__percent {
+    display:    block;
+    max-width:  100%;
+    width:      450px;
+    margin-top: 12px;
+  }
+  &__img {
+    max-width:    100%;
+    width:        400px;
+    padding-left: 40px;
+  }
+}
