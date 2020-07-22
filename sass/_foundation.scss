@@ -19,7 +19,7 @@ button {
   border: 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -41,6 +41,7 @@ li {
   padding:     30px 40px;
   font-size:   28px;
   font-weight: 900;
+  background-color: #ffffff;
   span {
     position: relative;
     z-index: 2;

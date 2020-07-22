@@ -1,0 +1,47 @@
+.what-wait {
+  margin-top: 120px;
+  h4 {
+    font-size:      58px;
+    font-weight:    900;
+    margin-bottom:  75px;
+    text-transform: uppercase;
+  }
+}
+
+.wait-block {
+  color:            #FFF;
+  background-color: #2d2e2d;
+  padding:          40px 42px;
+  &__date {
+    display:        block;
+    font-size:      14px;
+    padding-bottom: 20px;
+    opacity:        0;
+  }
+  &__bg {
+    opacity: 0;
+  }
+  &__title {
+    font-size:      22px;
+    font-weight:    900;
+    padding-bottom: 11px;
+  }
+  &__num {
+    display:     block;
+    font-size:   75px;
+    font-weight: 900;
+    padding-top: 35px;
+  }
+  &.active {
+    .wait-block {
+      &__bg {
+        opacity: 1;
+      }
+      &__date {
+        opacity: 1;
+      }
+
+    }
+
+  }
+}
