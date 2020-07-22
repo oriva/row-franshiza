@@ -1,0 +1,36 @@
+.row-school {
+  background-image: url('../img/row-school-bg.jpg');
+  background-size:         cover;
+  background-repeat: no-repeat;
+  padding: 280px 0 170px;
+  &__title {
+    font-size: 140px;
+    font-weight: 900;
+    line-height: 0.94;
+    padding-bottom: 60px;
+  }
+  &__sub-title {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+  &__button {
+    background-color: #272727;
+    color: #fff;
+    padding:          30px 40px;
+    font-size:        28px;
+    font-weight:      900;
+    margin-top: 52px;
+  }
+  &__li {
+    margin-bottom: 42px;
+    & > *:first-child {
+      display: block;
+      font-size: 24px;
+      font-weight: 900;
+      padding-bottom: 13px;
+    }
+    & > *:last-child {
+      font-size: 16px;
+    }
+  }
+}

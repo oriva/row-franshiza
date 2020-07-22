@@ -63,8 +63,8 @@
       top:      0;
       &:nth-of-type(n) {
         bottom:                   50%; /* отступ от центра по радиусу */
-        -ms-transform-origin:     0% 100%;
-        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin:     0 100%;
+        -webkit-transform-origin: 0 100%;
         transform-origin:         0 100%;
         padding-bottom:           50%; /* отступ от центра круга */
       }
@@ -158,6 +158,12 @@
       }
       &:nth-child(30) {
         transform: rotate($deg*29deg)
+      }
+      &:nth-child(31) {
+        transform: rotate($deg*30deg)
+      }
+      &:nth-child(32) {
+        transform: rotate($deg*31deg)
       }
     }
   }

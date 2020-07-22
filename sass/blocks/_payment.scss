@@ -1,0 +1,38 @@
+.payment {
+  display:          flex;
+  flex-wrap:        wrap;
+  justify-content:  space-between;
+  align-items:      center;
+  background-color: #fedd2c;
+  padding:          66px 120px;
+  margin-bottom:    30px;
+  &__form {
+    h3 {
+      font-size:   44px;
+      font-weight: 800;
+    }
+    button {
+      margin-top: 25px;
+    }
+  }
+  &__logo-block {
+    width:      250px;
+    text-align: center;
+    img {
+      display:   inline-block;
+      width:     130px;
+      max-width: 100%;
+    }
+  }
+}
+
+.form-callback {
+  padding:          66px 120px;
+  background-color: #272727;
+  color: #FFF;
+  h3 {
+    font-size:   44px;
+    font-weight: 800;
+    margin-bottom: 36px;
+  }
+}

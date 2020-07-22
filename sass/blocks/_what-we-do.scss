@@ -1,0 +1,38 @@
+.what-we-do {
+  width: 100%;
+  overflow: hidden;
+  &__first-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    &:after {
+      content: 'будете делать Вы!';
+      position: absolute;
+      top: 0;
+      left: 102%;
+      color: rgba(0,0,0,0.1);
+      width: 100%;
+    }
+  }
+  &__second-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 89px;
+    &:after {
+      content: 'Что мы делаем и что';
+      position: absolute;
+      top: 0;
+      right: 103%;
+      color: rgba(0,0,0,0.1);
+      width: 120%;
+      display: block;
+      text-align: right;
+    }
+  }
+}
+

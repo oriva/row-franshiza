@@ -3,6 +3,12 @@ body {
   font-size: 16px;
 }
 
+html {
+  min-width:  320px;
+  max-width:  100%;
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -28,4 +34,53 @@ ul {
 
 li {
   display: inline-block;
+}
+
+.button {
+  cursor:      pointer;
+  padding:     30px 40px;
+  font-size:   28px;
+  font-weight: 900;
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &_black {
+    position: relative;
+    color: #FFF;
+    background-color: #000;
+  }
+  &_franch {
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      height: 180px;
+      width: 170px;
+      top: 56px;
+      left: 50%;
+      background-image: url(../img/books-button.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &_blue {
+    color: #FFF;
+    background-color: #44b1f2;
+  }
+}
+
+
+.input {
+  font-family: 'Proxima Nova', sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 18px;
+  padding: 36px 30px;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
 }

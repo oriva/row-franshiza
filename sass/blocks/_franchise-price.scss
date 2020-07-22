@@ -1,0 +1,101 @@
+.franchise-price {
+  padding:   90px 0;
+  &__title {
+    display:        block;
+    font-size:      39px;
+    font-weight:    900;
+    padding-bottom: 80px;
+  }
+  &__price {
+    font-size:   47.5px;
+    font-weight: 900;
+    & > *:last-child {
+      font-size: 30px;
+    }
+  }
+  &__block-num {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    -moz-flex-box: 1;
+    -webkit-flex-box:1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    & > * {
+      font-weight: 900;
+      vertical-align: middle;
+      &:first-child {
+        font-size: 32px;
+      }
+      &:last-child {
+        font-size: 24px;
+      }
+    }
+  }
+  &__price-block {
+    position: relative;
+    padding-top: 52px;
+    -moz-flex-box: 1;
+    -webkit-flex-box:1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  &__old-price {
+    position: absolute;
+    top: 22px;
+    font-size: 22px;
+    font-weight: 900;
+    span:last-child {
+      font-size: 14px;
+    }
+  }
+}
+
+.franchise-price-first, .franchise-price-second {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.franchise-price-first {
+  color:            #fff;
+  background-image: url('../img/franchise-price-bg.jpg');
+  background-size:  cover;
+  height: 100%;
+}
+
+.franchise-price-second {
+  position: relative;
+  height: 100%;
+  &__border {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: solid 10px #272727;
+  }
+  &__corona {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 20%;
+    transform: translateX(50%);
+  }
+  .franchise-price__old-price {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 104%;
+      top: 50%;
+      left: -2%;
+      background-color: #3368a8;
+      transform:         translateY(-50%);
+    }
+  }
+}

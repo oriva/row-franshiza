@@ -1,0 +1,54 @@
+.slider-we-do {
+  overflow: visible !important;
+  margin-left: 50px;
+}
+.swiper-slide {
+  &__in {
+    height: 280px;
+    background-color: #eeeeee;
+    padding-top: 60px;
+    padding-left: 30px;
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 900;
+  }
+  &__sub-title {
+    display: block;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  &__budget-title {
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    padding-top: 30px;
+  }
+  &__price {
+    & > *:first-child {
+      font-size: 35px;
+      font-weight: 900;
+    }
+    & > *:last-child {
+      font-size: 22px;
+      font-weight: 900;
+    }
+  }
+}
+.slider-btn-block {
+  margin-top: 150px;
+  margin-bottom: 226px;
+  &__more, &__callback {
+    padding:          30px 40px;
+    font-size:        28px;
+    font-weight:      900;
+    color: #FFF;
+  }
+  &__more {
+    background-color: #141a9f;
+    margin-right: 28px;
+  }
+  &__callback {
+    background-color: #272727;
+  }
+}

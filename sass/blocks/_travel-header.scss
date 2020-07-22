@@ -1,0 +1,165 @@
+.travel-header {
+  position:      relative;
+  display:       inline-block;
+  font-size:     59px;
+  font-weight:   900;
+  margin-bottom: 80px;
+  img {
+    position:   absolute;
+    left:       115%;
+    width:      450px;
+    top:        0;
+    height:     100%;
+    object-fit: contain;
+  }
+  &__img {
+    width: 100%;
+  }
+  h3 {
+    font-size:     36px;
+    margin-bottom: 25px;
+  }
+}
+
+.second-button-cycle {
+  margin-top:    88px;
+  margin-bottom: 120px;
+}
+
+.circle-button__text-block.new-cycle {
+  span {
+    $deg: 8.1;
+    &:nth-child(1) {
+      transform: rotate(0deg)
+    }
+    &:nth-child(2) {
+      transform: rotate($deg*1deg)
+    }
+    &:nth-child(3) {
+      transform: rotate($deg*2deg)
+    }
+    &:nth-child(4) {
+      transform: rotate($deg*3deg)
+    }
+    &:nth-child(5) {
+      transform: rotate($deg*4deg)
+    }
+    &:nth-child(6) {
+      transform: rotate($deg*5deg)
+    }
+    &:nth-child(7) {
+      transform: rotate($deg*6deg)
+    }
+    &:nth-child(8) {
+      transform: rotate($deg*7deg)
+    }
+    &:nth-child(9) {
+      transform: rotate($deg*8deg)
+    }
+    &:nth-child(10) {
+      transform: rotate($deg*9deg)
+    }
+    &:nth-child(11) {
+      transform: rotate($deg*10deg)
+    }
+    &:nth-child(12) {
+      transform: rotate($deg*11deg)
+    }
+    &:nth-child(13) {
+      transform: rotate($deg*12deg)
+    }
+    &:nth-child(14) {
+      transform: rotate($deg*13deg)
+    }
+    &:nth-child(15) {
+      transform: rotate($deg*14deg)
+    }
+    &:nth-child(16) {
+      transform: rotate($deg*15deg)
+    }
+    &:nth-child(17) {
+      transform: rotate($deg*16deg)
+    }
+    &:nth-child(18) {
+      transform: rotate($deg*17deg)
+    }
+    &:nth-child(19) {
+      transform: rotate($deg*18deg)
+    }
+    &:nth-child(20) {
+      transform: rotate($deg*19deg)
+    }
+    &:nth-child(21) {
+      transform: rotate($deg*20deg)
+    }
+    &:nth-child(22) {
+      transform: rotate($deg*21deg)
+    }
+    &:nth-child(23) {
+      transform: rotate($deg*22deg)
+    }
+    &:nth-child(24) {
+      transform: rotate($deg*23deg)
+    }
+    &:nth-child(25) {
+      transform: rotate($deg*24deg)
+    }
+    &:nth-child(26) {
+      transform: rotate($deg*25deg)
+    }
+    &:nth-child(27) {
+      transform: rotate($deg*26deg)
+    }
+    &:nth-child(28) {
+      transform: rotate($deg*27deg)
+    }
+    &:nth-child(29) {
+      transform: rotate($deg*28deg)
+    }
+    &:nth-child(30) {
+      transform: rotate($deg*29deg)
+    }
+    &:nth-child(31) {
+      transform: rotate($deg*30deg)
+    }
+    &:nth-child(32) {
+      transform: rotate($deg*31deg)
+    }
+    &:nth-child(33) {
+      transform: rotate($deg*32deg)
+    }
+    &:nth-child(34) {
+      transform: rotate($deg*33deg)
+    }
+    &:nth-child(35) {
+      transform: rotate($deg*34deg)
+    }
+    &:nth-child(36) {
+      transform: rotate($deg*35deg)
+    }
+    &:nth-child(37) {
+      transform: rotate($deg*36deg)
+    }
+    &:nth-child(38) {
+      transform: rotate($deg*37deg)
+    }
+    &:nth-child(39) {
+      transform: rotate($deg*38deg)
+    }
+    &:nth-child(40) {
+      transform: rotate($deg*39deg)
+    }
+    &:nth-child(41) {
+      transform: rotate($deg*40deg)
+    }
+    &:nth-child(42) {
+      transform: rotate($deg*41deg)
+    }
+    &:nth-child(43) {
+      transform: rotate($deg*42deg)
+    }
+    &:nth-child(44) {
+      transform: rotate($deg*43deg)
+    }
+  }
+}
