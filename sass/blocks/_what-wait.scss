@@ -12,6 +12,7 @@
   color:            #FFF;
   background-color: #2d2e2d;
   padding:          40px 42px;
+  margin-bottom: 23px;
   &__date {
     display:        block;
     font-size:      14px;
@@ -43,5 +44,18 @@
 
     }
 
+  }
+}
+
+.wait-you {
+  margin: 120px 0;
+  text-align: center;
+  &__title {
+    font-size: 120px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  button {
+    margin-top: 41px;
   }
 }
