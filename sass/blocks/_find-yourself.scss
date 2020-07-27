@@ -14,7 +14,8 @@
   &__banner {
     background-image: url('../img/created-dig-bg.jpg');
     background-size: cover;
-    padding: 72px 120px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     margin-top: 80px;
     color: #fff;
     h3 {
@@ -32,6 +33,12 @@
   }
 }
 
-.change-life {
-
+@media (max-width: 1460px) {
+  .find-yourself {
+    padding: 80px 0;
+    &__banner {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+  }
 }

@@ -66,3 +66,17 @@
     margin-top: 41px;
   }
 }
+
+@media (max-width: 1460px) {
+  .wait-you {
+    &__title {
+      font-size: 80px;
+    }
+  }
+  .what-wait {
+    margin-top: 70px;
+    h4 {
+      margin-bottom: 45px
+    }
+  }
+}

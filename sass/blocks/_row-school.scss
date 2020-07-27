@@ -34,3 +34,16 @@
     }
   }
 }
+
+@media (max-width: 1460px) {
+  .row-school {
+    padding: 130px 0 70px;
+    &__title {
+      font-size: 100px;
+      padding-bottom: 30px;
+    }
+    &__button {
+      margin-top: 40px;
+    }
+  }
+}

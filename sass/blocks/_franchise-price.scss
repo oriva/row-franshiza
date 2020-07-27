@@ -99,3 +99,20 @@
     }
   }
 }
+
+@media (max-width: 1460px) {
+  .franchise-price {
+    button {
+      margin-bottom: 40px;
+    }
+    &__title {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .franchise-price {
+    padding: 50px 0
+  }
+}

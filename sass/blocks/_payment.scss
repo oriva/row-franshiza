@@ -4,7 +4,8 @@
   justify-content:  space-between;
   align-items:      center;
   background-color: #fedd2c;
-  padding:          66px 120px;
+  padding-top:      66px;
+  padding-bottom:   66px;
   margin-bottom:    30px;
   &__form {
     h3 {
@@ -27,12 +28,36 @@
 }
 
 .form-callback {
-  padding:          66px 120px;
+  padding-top:      66px;
+  padding-bottom:   66px;
   background-color: #272727;
-  color: #FFF;
+  color:            #FFF;
   h3 {
     font-size:   44px;
     font-weight: 800;
     margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .payment {
+    padding-top:    35px;
+    padding-bottom: 35px;
+    &__form {
+      h3 {
+        font-size: 32px
+      }
+    }
+  }
+
+  .form-callback {
+    padding-bottom: 41px;
+    input {
+      width:         100%;
+      margin-bottom: 25px;
+    }
+    .button {
+      width: 100%;
+    }
   }
 }

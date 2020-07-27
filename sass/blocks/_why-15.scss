@@ -1,9 +1,10 @@
 .why-15 {
-  width:               1120px;
+  width:               1150px;
   max-width:           100%;
   margin-top:          80px;
   margin-bottom:       140px;
-  padding:             90px 110px;
+  padding-top:         90px;
+  padding-bottom:      90px;
   margin-left:         73px;
   background-image:    url('../img/blue-grad.jpg');
   background-size:     cover;
@@ -11,7 +12,7 @@
   font-size:           36px;
   font-weight:         900;
   img {
-    margin-left: 36px;
+    margin-left: 20px;
     width:       18px;
   }
 }
@@ -101,5 +102,70 @@
     border-radius:   50%;
     text-align:      center;
     cursor:          pointer;
+  }
+}
+
+@media (max-width: 1460px) {
+  .why-15 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .why-15 {
+    margin-left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .partner-grey {
+    &__about p {
+      padding-top: 80px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .why-15 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 27px;
+  }
+  .partner-grey {
+    justify-content: center;
+    &__soc-net {
+      padding-left: 20px;
+      left: 0;
+      width: 100%;
+      flex: 0 0 100%;
+      text-align: center;
+      a {
+        display: inline-block;
+      }
+    }
+    &__about {
+      h3 {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    &__photo {
+      padding-left: 0;
+    }
+  }
+  .partner-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 30px;
+    &__plus {
+      margin: auto 30px;
+    }
   }
 }

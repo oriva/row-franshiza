@@ -10,3 +10,21 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 1460px) {
+  .change-life {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__title {
+      font-size: 65px;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .change-life {
+    padding-top:    70px;
+    padding-bottom: 70px;
+  }
+}

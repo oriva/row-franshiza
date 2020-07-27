@@ -36,3 +36,11 @@
   }
 }
 
+@media (max-width: 1460px) {
+  .what-we-do {
+    &__first-heading, &__second-heading {
+      font-size: 70px;
+    }
+
+  }
+}

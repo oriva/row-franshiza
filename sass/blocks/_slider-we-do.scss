@@ -52,3 +52,15 @@
     background-color: #272727;
   }
 }
+
+@media (max-width: 1460px) {
+  .slider-btn-block {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .swiper-slide {
+    &__title {
+      font-size: 25px;
+    }
+  }
+}

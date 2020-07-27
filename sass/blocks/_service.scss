@@ -74,3 +74,36 @@
     }
   }
 }
+
+@media (max-width: 1460px) {
+  .service {
+    &__after-info>*:first-child {
+      margin-bottom: 15px;
+    }
+    &__after-num {
+      margin-left: 0;
+    }
+    &__after-img {
+      margin-left: 70px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .service {
+    &__num {
+      width: 60px
+    }
+    &__info {
+      & > *:last-child {
+        margin-bottom: 70px;
+      }
+    }
+    &__img {
+      img {
+        margin-left: 60px;
+      }
+    }
+  }
+}

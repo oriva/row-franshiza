@@ -1,0 +1,41 @@
+.modal {
+  position:        fixed;
+  z-index:         40;
+  top:             0;
+  left:            0;
+  display:         flex;
+  flex-wrap:       wrap;
+  align-items:     center;
+  justify-content: center;
+  height:          100vh;
+  width:           100vw;
+  opacity:         0;
+  transition:      .5s;
+  &__show {
+    opacity: 1;
+  }
+  &__hide {
+    display: none;
+  }
+  &__bg {
+    position:   absolute;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: #272727;
+  }
+  &__content {
+    z-index:  3;
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    z-index:  3;
+    height:   30px;
+    width:    30px;
+    right:    0;
+    top:      0;
+    cursor:   pointer;
+  }
+}

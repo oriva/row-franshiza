@@ -36,3 +36,40 @@
     line-height: 1.5;
   }
 }
+
+@media (max-width: 1200px) {
+  .zero-ruble {
+    align-items: center;
+    &__num {
+      order: 1;
+    }
+    &__heading {
+      order: 2;
+    }
+    &__button {
+      order: 4;
+    }
+    &__under-head {
+      width: auto;
+      margin-left: 0;
+      order: 3;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .zero-ruble {
+    &__num {
+      font-size: 92px;
+      flex: 0 0 124px;
+      width: 124px;
+      height: 124px;
+    }
+    &__heading {
+      font-size: 40px;
+    }
+    &__under-head {
+      margin-left: 0;
+    }
+  }
+}

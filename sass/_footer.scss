@@ -1,0 +1,17 @@
+.footer {
+  background-color: #272727;
+  color: #FFF;
+  padding: 73px 0;
+  &__title {
+    font-size: 22px;
+    font-weight: 900;
+    padding-bottom: 16px;
+  }
+  a, span {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  a {
+    color: #fff;
+  }
+}

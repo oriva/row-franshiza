@@ -65,6 +65,11 @@ li {
       background-repeat: no-repeat;
       transform: translate(-50%, -50%);
     }
+    &:hover {
+      span {
+        animation: rotate 8s linear infinite;
+      }
+    }
   }
   &_blue {
     color: #FFF;
@@ -83,5 +88,28 @@ li {
   &:focus {
     outline: 0;
     box-shadow: none;
+  }
+}
+
+
+.padding-block {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+@media (max-width: 1460px) {
+  .padding-block {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .padding-block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .button {
+    font-size: 20px;
   }
 }

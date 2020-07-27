@@ -16,3 +16,24 @@
     padding-left: 40px;
   }
 }
+
+@media (max-width: 1200px) {
+  .about {
+    &__percent {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-bottom: 50px;
+    &__img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      padding-left: 0;
+    }
+  }
+}

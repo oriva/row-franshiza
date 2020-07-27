@@ -56,3 +56,18 @@
   background-position: right 60%;
   color: #FFF;
 }
+
+@media (max-width: 992px) {
+  .heading-xlarge {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-xlarge {
+    font-size: 38px;
+  }
+  .heading-large {
+    font-size: 30px;
+  }
+}

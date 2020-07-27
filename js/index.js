@@ -54,5 +54,100 @@ $().ready(() => {
             }
         });
     }, 100);
+    $('.scroll-js').on('click', function (e) {
+        e.preventDefault();
+        $("body,html").animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top
+            },
+            800
+        );
+    });
+    getPosMenu();
 });
 
+$(window).mousewheel(function (e) {
+    console.log(e.deltaY);
+    if (e.deltaY > 0) {
+        $('.header').removeClass('header_up')
+    } else if (e.deltaY < 0) {
+        $('.header').addClass('header_up')
+    }
+    getPosMenu();
+});
+
+const getPosMenu = () => {
+    let scrollPos = $(window).scrollTop();
+    if (scrollPos > 0) {
+        $('.header').addClass('header__fixed');
+    } else {
+        $('.header').removeClass('header__fixed');
+    }
+};
+
+$('.show-modal').on('click', function () {
+    showModal('show');
+});
+
+$('.modal__close').on('click', function () {
+    showModal('hide');
+});
+
+const showModal = (action, type) => {
+    switch (type) {
+        case 'callback':
+
+            break;
+        case 'sale':
+
+            break;
+    }
+    if (action === 'show') {
+        $('.modal').removeClass('modal__hide');
+        setTimeout(() => {
+            $('.modal').addClass('modal__show');
+        }, 10);
+    } else {
+        $('.modal').removeClass('modal__show');
+        setTimeout(() => {
+            $('.modal').addClass('modal__hide');
+        }, 510);
+    }
+};
+
+$('form').on('submit', function (e) {
+    e.preventDefault();
+    var domElem = $(this);
+    var form_data = $(this).serialize();
+    setTimeout(function () {
+        domElem.trigger('reset');
+    }, 500, domElem);
+    $.ajax({
+        type: "POST", //Метод отправки
+        url: "/send.php", //путь до php фаила отправителя
+        data: form_data
+        , success: function () {
+            showModal('hide');
+        }
+        , error: function () {
+            console.log('Ошибка! Обратитесь к администратору');
+        }
+    });
+});
+
+
+$('.burger').on('click', () => {
+    $('.burger-menu').removeClass('burger-menu_hide');
+    setTimeout(() => {
+        $('.burger-menu').addClass('burger-menu_show');
+    }, 10);
+});
+
+$('.burger-menu').on('click', (e) => {
+    if (e.target.classList.contains('burger-menu__bg') || e.target.offsetParent.classList.contains('burger-menu__close')) {
+        $('.burger-menu').removeClass('burger-menu_show');
+        setTimeout(() => {
+            $('.burger-menu').addClass('burger-menu_hide');
+        }, 550);
+    }
+});
