@@ -11,6 +11,13 @@
   width:           100vw;
   opacity:         0;
   transition:      .5s;
+  &__button {
+    transition: .3s;
+    &:hover {
+      background-color: rgba(255,255,255,0.2);
+      color: #FFF;
+    }
+  }
   &__show {
     opacity: 1;
   }
@@ -30,12 +37,20 @@
     position: relative;
   }
   &__close {
-    position: absolute;
-    z-index:  3;
-    height:   30px;
-    width:    30px;
-    right:    0;
-    top:      0;
-    cursor:   pointer;
+    position:   absolute;
+    z-index:    3;
+    height:     30px;
+    width:      30px;
+    right:      0;
+    top:        0;
+    cursor:     pointer;
+    transition: .4s;
+    &:hover {
+      transform: rotate(180deg);
+    }
+    img {
+      width:  100%;
+      height: 100%;
+    }
   }
 }

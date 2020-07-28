@@ -47,6 +47,12 @@
   &__more {
     background-color: #141a9f;
     margin-right: 28px;
+    transition: .5s;
+    &:hover {
+      color: #141a9f;
+      background-color: #fff;
+      outline: 1px solid #141a9f;
+    }
   }
   &__callback {
     background-color: #272727;

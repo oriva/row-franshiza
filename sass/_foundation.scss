@@ -50,6 +50,12 @@ li {
     position: relative;
     color: #FFF;
     background-color: #000;
+    transition: .5s;
+    &:hover {
+      color: #000;
+      background-color: #FFF;
+      outline: 1px solid #000;
+    }
   }
   &_franch {
     &::after {
@@ -91,6 +97,10 @@ li {
   }
 }
 
+.pers-3d {
+  perspective: 500px;
+  transform-style: preserve-3d
+}
 
 .padding-block {
   padding-left: 120px;
