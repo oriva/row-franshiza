@@ -4,6 +4,7 @@
 
 .under-header {
   height:      calc(100vh - 102px);
+  min-height:  540px;
   padding-top: 102px;
   .container, .row {
     height: 100%;
