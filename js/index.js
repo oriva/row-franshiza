@@ -135,9 +135,11 @@ $('form').on('submit', function (e) {
         url: "/send.php", //путь до php фаила отправителя
         data: form_data
         , success: function () {
+            domElem.find('button').html('Отправлено');
             showModal('hide');
         }
         , error: function () {
+            domElem.find('button').html('Отправлено');
             console.log('Ошибка! Обратитесь к администратору');
         }
     });
@@ -161,4 +163,9 @@ $('.burger-menu').on('click', (e) => {
 });
 $('.about__img').on('click', (e) => {
     e.target.muted = !e.target.muted;
+});
+
+$('.why-15').on('click', function (e) {
+    $('#hide-15').slideToggle('slow');
+    $(this).addClass('d-none');
 });

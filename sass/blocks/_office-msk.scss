@@ -18,7 +18,13 @@
     margin-top: 28px;
     padding:          23px 32px;
     background-color: #000;
+    border: 1px solid #000;
     color:            #fff;
+    transition: .3s;
+    &:hover {
+      background-color: #FFF;
+      color:            #000;
+    }
   }
 }
 
