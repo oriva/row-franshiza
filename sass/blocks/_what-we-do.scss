@@ -45,3 +45,11 @@
 
   }
 }
+
+@media (max-width: 768px) {
+  .what-we-do {
+    &__first-heading, &__second-heading {
+      font-size: 30px;
+    }
+  }
+}

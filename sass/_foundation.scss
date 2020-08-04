@@ -82,6 +82,8 @@ li {
       transition: .3s;
     }
     &:hover {
+      color:            #fff;
+      background-color: #000;
       &::after {
         animation: translater 3s linear infinite;
       }
@@ -143,5 +145,12 @@ li {
   }
   .button {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }

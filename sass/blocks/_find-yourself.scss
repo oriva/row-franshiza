@@ -42,3 +42,16 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .find-yourself {
+    &__sub-title {
+      margin-left: 0;
+    }
+    &__tablet-block {
+      img {
+        width: 100px;
+      }
+    }
+  }
+}

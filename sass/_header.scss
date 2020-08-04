@@ -152,5 +152,12 @@
       display: block;
     }
   }
+}
 
+@media (max-width: 768px) {
+  .burger-menu {
+    &__content {
+      overflow-y: scroll;
+    }
+  }
 }

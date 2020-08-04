@@ -47,7 +47,7 @@
 
 @media (max-width: 1460px) {
   .history-success {
-    margin-top: 100px;
+    padding-top: 100px;
     h2 {
       font-size: 50px
     }
@@ -60,6 +60,21 @@
       .button_black img {
         width: 33px;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .history-success {
+    padding-top: 40px;
+    &__info-block {
+      button {
+        margin-bottom: 20px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      padding: 35px;
     }
   }
 }

@@ -164,3 +164,17 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .travel-header {
+    margin-bottom: 40px;
+    margin-top: 90px;
+    &__img {
+      margin-bottom: 30px;
+    }
+  }
+  .second-button-cycle {
+    margin-top: 48px;
+    margin-bottom: 60px;
+  }
+}

@@ -2,13 +2,14 @@ $().ready(() => {
     let priceVal=100, margVal=50, clientVal=2, mouthVal=5, totalVal;
     setTimeout(() => {
         var spiwsuper = new Swiper('.slider-we-do', {
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
-            // width: 1210,
             slidesPerView: 4,
             spaceBetween: 30,
+            breakpoints: {
+                768: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                }
+            }
         });
         function changePrice() {
             totalVal = (priceVal*Math.round(margVal*0.1)*clientVal*mouthVal)*100;
@@ -95,21 +96,15 @@ const getPosMenu = () => {
 
 $('.show-modal').on('click', function () {
     showModal('show');
+    $('.modal__input-type').val($(this).data('but'));
 });
 
 $('.modal__close').on('click', function () {
     showModal('hide');
 });
 
-const showModal = (action, type) => {
-    switch (type) {
-        case 'callback':
+const showModal = (action) => {
 
-            break;
-        case 'sale':
-
-            break;
-    }
     if (action === 'show') {
         $('.modal').removeClass('modal__hide');
         setTimeout(() => {
@@ -119,30 +114,35 @@ const showModal = (action, type) => {
         $('.modal').removeClass('modal__show');
         setTimeout(() => {
             $('.modal').addClass('modal__hide');
+            $('.modal__button').html('Оставить заявку');
         }, 510);
     }
 };
 
 $('form').on('submit', function (e) {
-    e.preventDefault();
-    var domElem = $(this);
-    var form_data = $(this).serialize();
-    setTimeout(function () {
-        domElem.trigger('reset');
-    }, 500, domElem);
-    $.ajax({
-        type: "POST", //Метод отправки
-        url: "/send.php", //путь до php фаила отправителя
-        data: form_data
-        , success: function () {
-            domElem.find('button').html('Отправлено');
-            showModal('hide');
-        }
-        , error: function () {
-            domElem.find('button').html('Отправлено');
-            console.log('Ошибка! Обратитесь к администратору');
-        }
-    });
+    if (!$(this).hasClass('tinkoff-form')) {
+        e.preventDefault();
+        var domElem = $(this);
+        var form_data = $(this).serialize();
+        setTimeout(function () {
+            domElem.trigger('reset');
+        }, 500, domElem);
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "/send.php", //путь до php фаила отправителя
+            data: form_data
+            , success: function () {
+                domElem.find('button').html('Отправлено');
+                setTimeout(()=>{
+                    showModal('hide');
+                },2000);
+            }
+            , error: function () {
+                domElem.find('button').html('Отправлено');
+                console.log('Ошибка! Обратитесь к администратору');
+            }
+        });
+    }
 });
 
 

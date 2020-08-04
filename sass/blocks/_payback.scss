@@ -69,3 +69,20 @@
   }
 }
 
+@media (max-width: 768px) {
+  .payback {
+    margin-top: 70px;
+    &__title {
+      font-size: 25px;
+    }
+  }
+  .payback-text {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .payback-calc {
+    padding: 20px 28px;
+  }
+}
+

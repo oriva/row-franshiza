@@ -80,3 +80,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .wait-you {
+    &__title {
+      font-size: 60px;
+    }
+  }
+}

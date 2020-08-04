@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Row Studio - франшиза</title>
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css?v=1.1">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.min.css">
 	<script async src="js/swiper.min.js"></script>
@@ -25,15 +25,15 @@
 					<div class="form-callback padding-block">
 						<h3><span class="text-pink-bg">Я готов</span> изменить свою жизнь!</h3>
 						<div class="row">
-							<input type="text" name="type" class="d-none modal__input-type" value="Оставить заявку"
+							<input type="text" name="type" class="d-none modal__input-type" value=""
 								   hidden>
-							<div class="col-auto">
+							<div class="col-md-auto col-12">
 								<input class="input" type="text" placeholder="Имя" name="name" required>
 							</div>
-							<div class="col-auto">
+							<div class="col-md-auto col-12">
 								<input class="input" type="text" placeholder="Телефон" name="phone" required>
 							</div>
-							<div class="col-auto">
+							<div class="col-md-auto col-12">
 								<input class="input" type="text" placeholder="Город" name="city" required>
 							</div>
 							<div class="col">
@@ -81,9 +81,9 @@
 				<a href="#franchise-price" class="scroll-js">9. Стоимость франшизы</a>
 			</li>
 		</ul>
-		<button class="button button_black button_franch show-modal">
+		<button class="button button_black button_franch show-modal" data-but="Стать партнером">
 			<span>
-				Получить франч-бук
+				Стать партнером
 			</span>
 		</button>
 	</div>
@@ -121,10 +121,10 @@
 							Чистая прибыль в месяц от 200.000 рублей
 							Гарантия окупаемости, прописанная в договоре!
 						</span>
-					<button class="under-header__button button button_black button_franch show-modal">
-							<span>
-								Получить франч-бук
-							</span>
+					<button class="under-header__button button button_black button_franch show-modal" data-but="Получить франч-бук">
+						<span>
+							Получить франч-бук
+						</span>
 					</button>
 				</div>
 				<div class="col-md-4">
@@ -162,7 +162,7 @@
 							<span>й</span>
 							<span>.</span>
 						</div>
-						<button class="show-modal">Забронировать <br>скидку</button>
+						<button class="show-modal" data-but="Забронировать скидку">Забронировать <br>скидку</button>
 					</div>
 				</div>
 			</div>
@@ -184,7 +184,7 @@
 					<img src="img/50_percent.png" alt="" class="about__percent">
 				</div>
 				<div class="col-xl-5 col-md-6 order-md-2 order-1">
-					<video src="franchise-promo.mp4" controls class="about__img animateme"
+					<video src="franchise-promo.mp4" controls class="about__img animateme" poster="img/franchise-promo.jpg"
 						   data-when="enter"
 						   data-from="0.75"
 						   data-to="0"
@@ -508,7 +508,7 @@
 									<a href="https://www.instagram.com/katy_peli/" target="_blank">
 										<img src="img/inst.jpg" alt="">
 									</a>
-									<a href="https://vk.com/katy_peli" target="_blank">
+									<a href="https://web.telegram.org/katy_peli#/im?p=@katy_peli" target="_blank">
 										<img src="img/tg.jpg" alt="">
 									</a>
 								</div>
@@ -516,6 +516,7 @@
 									<img src="img/katya.jpg" alt="">
 								</div>
 								<div class="partner-grey__about">
+									<span class="partner-grey__about-city">г. Санкт-Петербург</span>
 									<h3>Пелихова Екатерина</h3>
 									<div class="partner-grey__quotes"><img src="img/quotes-first.png" alt=""></div>
 									<p class="text-white">Я давно хотела начать свое дело, но не имея опыта в
@@ -534,7 +535,7 @@
 								 data-when="view"
 								 data-from="0.5"
 								 data-to="0"
-								 data-opacity="0">
+								 data-opacity="0" data-but="Стать партнером">
 								<h2>СТАТЬ ПАРТНЕРОМ</h2>
 								<div class="partner-button__plus">
 									<span>+</span>
@@ -566,10 +567,10 @@
 						капитала
 					</div>
 					<div class="zero-ruble__button">
-						<button class="under-header__button button button_black button_franch show-modal">
-								<span>
-									Получить франч-бук
-								</span>
+						<button class="under-header__button button button_black button_franch show-modal" data-but="Получить франч-бук">
+							<span>
+								Получить франч-бук
+							</span>
 						</button>
 					</div>
 					<div class="zero-ruble__under-head">
@@ -727,6 +728,9 @@
 												Портал <br>«Мой бизнес»
 											</span>
 										<span class="swiper-slide__sub-title">Корпоративный сайт</span>
+										<div class="swiper-slide__link">
+											<a href="https://mb38.ru/" target="_blank">Перейти на сайт</a>
+										</div>
 										<span class="swiper-slide__budget-title">Бюджет:</span>
 										<div class="swiper-slide__price">
 											<span>500 000</span>
@@ -740,6 +744,9 @@
 												Не <br>школьники
 											</span>
 										<span class="swiper-slide__sub-title">Имиджевый сайт</span>
+										<div class="swiper-slide__link">
+											<a href="https://ne-shkolniki.ru/" target="_blank">Перейти на сайт</a>
+										</div>
 										<span class="swiper-slide__budget-title">Бюджет:</span>
 										<div class="swiper-slide__price">
 											<span>250 000</span>
@@ -753,6 +760,9 @@
 												Ла <br>премьер
 											</span>
 										<span class="swiper-slide__sub-title">Корпоративный сайт</span>
+										<div class="swiper-slide__link">
+											<a href="https://lapremiere-beauty.ru/" target="_blank">Перейти на сайт</a>
+										</div>
 										<span class="swiper-slide__budget-title">Бюджет:</span>
 										<div class="swiper-slide__price">
 											<span>500 000</span>
@@ -766,6 +776,9 @@
 												Байкал <br>вуд
 											</span>
 										<span class="swiper-slide__sub-title">Имиджевый сайт</span>
+										<div class="swiper-slide__link">
+											<a href="https://baikalwoodhotel.ru/" target="_blank">Перейти на сайт</a>
+										</div>
 										<span class="swiper-slide__budget-title">Бюджет:</span>
 										<div class="swiper-slide__price">
 											<span>200 000</span>
@@ -779,6 +792,9 @@
 												Давайте <br>поедим
 											</span>
 										<span class="swiper-slide__sub-title">Сервис доставки</span>
+										<div class="swiper-slide__link">
+											<a href="https://davayte-poedim.ru/" target="_blank">Перейти на сайт</a>
+										</div>
 										<span class="swiper-slide__budget-title">Бюджет:</span>
 										<div class="swiper-slide__price">
 											<span>500 000</span>
@@ -793,9 +809,8 @@
 				<div class="col-12">
 					<div class="slider-btn-block">
 						<a href="https://rowstudio.ru/projects/" target="_blank" class="slider-btn-block__more">Смотреть
-																												больше
-																												проектов</a>
-						<button class="button button_black show-modal">Оставить заявку</button>
+																												больше проектов</a>
+						<button class="button button_black show-modal" data-but="Оставить заявку">Оставить заявку</button>
 					</div>
 				</div>
 			</div>
@@ -964,7 +979,7 @@
 							<span>ы</span>
 							<span>м.</span>
 						</div>
-						<button class="show-modal">Забронировать <br>скидку</button>
+						<button class="show-modal" data-but="Забронировать скидку">Забронировать <br>скидку</button>
 					</div>
 				</div>
 			</div>
@@ -1058,7 +1073,7 @@
 							Ты <span class="text-pink">готов</span> изменить свою жизнь?
 						</span>
 				</div>
-				<div class="col-auto">
+				<div class="col-md-auto col-12">
 					<div class="circle-button">
 						<div class="circle-button__text-block new-cycle">
 							<span>Я</span>
@@ -1119,7 +1134,7 @@
 				<div class="franchise-price row" id="franchise-price">
 					<div class="col-xxl-4">
 						<span class="franchise-price__title">СТОИМОСТЬ ФРАНШИЗЫ</span>
-						<button class="button button_black button_franch show-modal"><span>Получить франч-бук</span></button>
+						<button class="button button_black show-modal" data-but="Стать партнером"><span>Стать партнером</span></button>
 					</div>
 					<div class="col-xxl-4 col-md-6">
 						<div class="franchise-price-first">
@@ -1186,7 +1201,7 @@
 					 data-rotatex="40">
 					<div class="payment__form">
 						<h3>Купить с рассрочкой на 12 месяцев</h3>
-						<form action="https://loans-qa.tcsbank.ru/api/partners/v1/lightweight/create" method="post">
+						<form class="tinkoff-form" action="https://loans-qa.tcsbank.ru/api/partners/v1/lightweight/create" method="post">
 							<input name="shopId" value="test_online" type="hidden"/>
 							<input name="showcaseId" value="test_online" type="hidden"/>
 							<input name="promoCode" value="default" type="hidden"/>
@@ -1333,7 +1348,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="wait-you__title">ждем <span class="text-pink">именно</span> тебя!</div>
-					<button class="button text-pink-bg show-modal">Заказать расчет для моего города</button>
+					<button class="button text-pink-bg show-modal" data-but="Заказать расчет для моего города">Заказать расчет для моего города</button>
 				</div>
 			</div>
 		</div>
@@ -1402,7 +1417,7 @@
 							<span>ИНН: 381114288464</span>
 						</div>
 						<div>
-							<a href="" class="green">Открыть карточку огранизации</a>
+							<a href="https://rowstudio.ru/contacts/" class="green" target="_blank">Открыть карточку огранизации</a>
 						</div>
 					</div>
 					<div class="col-auto">

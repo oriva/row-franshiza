@@ -17,7 +17,7 @@ $message = '
                         <title>' . $subject . '</title>
                     </head>
                     <body style="padding: 20px; border: 1px solid #000">
-                        <p style="font-size: 1.2em; color: #333"><span style="font-weight: 600">Заявка:</span></p>'
+                        <p style="font-size: 1.2em; color: #333"><span style="font-weight: 600">Заявка: ' . $_POST['type'] . '</span></p>'
 	. $name . $phone . $question . $occupation .
 	'</body>
                 </html>';

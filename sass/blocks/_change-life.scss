@@ -28,3 +28,13 @@
     padding-bottom: 70px;
   }
 }
+
+@media (max-width: 768px) {
+  .change-life {
+    &__title {
+      display: block;
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  }
+}

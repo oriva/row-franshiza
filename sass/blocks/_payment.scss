@@ -62,3 +62,22 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .payment {
+    &__form {
+      button {
+        width: 100%;
+      }
+    }
+    &__logo-block {
+      width: 100%;
+    }
+  }
+  .modal {
+    .form-callback {
+      overflow-y: scroll;
+      height: 100vh;
+    }
+  }
+}

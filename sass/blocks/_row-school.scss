@@ -53,3 +53,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .row-school {
+    padding: 80px 0 40px;
+    &__title {
+      font-size: 65px;
+    }
+    &__button {
+      margin-bottom: 30px;
+    }
+  }
+}
