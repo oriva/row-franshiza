@@ -7,6 +7,7 @@
     position: relative;
     padding-left: 20px;
     margin-top: 10px;
+    transition: .3s;
     &::after {
       content: '';
       position: absolute;
@@ -19,18 +20,25 @@
       background-position: center;
       background-size:         contain;
     }
+    &:hover {
+      filter: invert(0.4);
+    }
   }
   &__in {
     height: 280px;
     background-color: #eeeeee;
     padding-top: 50px;
     padding-left: 30px;
+    transition: .3s;
     a {
       position: relative;
       display: inline-block;
       color: #000;
       font-size: 16px;
       font-weight: bold;
+    }
+    &:hover {
+      transform: scale(1.05);
     }
   }
   &__title {

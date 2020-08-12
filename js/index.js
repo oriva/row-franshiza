@@ -119,6 +119,21 @@ const showModal = (action) => {
     }
 };
 
+$('.js-show-story').on('click', () => {
+    $('.modal-story').removeClass('modal-story__hide');
+    setTimeout(() => {
+        $('.modal-story').addClass('modal-story__show');
+    }, 10);
+});
+
+$('.modal-story__close').on('click', () => {
+    $('.modal-story').removeClass('modal-story__show');
+    setTimeout(() => {
+        $('.modal-story').addClass('modal-story__hide');
+        $('.modal-story__button').html('Оставить заявку');
+    }, 510);
+});
+
 $('form').on('submit', function (e) {
     if (!$(this).hasClass('tinkoff-form')) {
         e.preventDefault();
@@ -161,9 +176,9 @@ $('.burger-menu').on('click', (e) => {
         }, 550);
     }
 });
-$('.about__img').on('click', (e) => {
-    e.target.muted = !e.target.muted;
-});
+// $('.about__img').on('click', (e) => {
+//     e.target.muted = !e.target.muted;
+// });
 
 $('.why-15').on('click', function (e) {
     $('#hide-15').slideToggle('slow');

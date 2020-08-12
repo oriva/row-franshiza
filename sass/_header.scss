@@ -50,6 +50,9 @@
   }
   a {
     color: #000;
+    &:hover {
+      opacity: .8;
+    }
   }
 }
 
@@ -125,6 +128,9 @@
     }
     a {
       color: #000;
+      &:hover {
+        opacity: .8;
+      }
     }
   }
   &__close {

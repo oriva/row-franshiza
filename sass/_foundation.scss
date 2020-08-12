@@ -9,6 +9,10 @@ html {
   overflow-x: hidden;
 }
 
+main {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -80,12 +84,14 @@ li {
       background-size: contain;
       background-repeat: no-repeat;
       transition: .3s;
+      animation: translater 3s linear infinite;
+      animation-play-state: paused;
     }
     &:hover {
       color:            #fff;
       background-color: #000;
       &::after {
-        animation: translater 3s linear infinite;
+        animation-play-state: running;
       }
     }
   }
